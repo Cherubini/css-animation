@@ -1,0 +1,81 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    display: flax;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+.navbar>a{
+    text-decoration: none;
+}
+
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in-out; */
+    
+}
+.box:hover{
+    animation-name: aim-hover;
+    
+}
+
+@keyframes animation /*nome scelto da me*/{
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(360deg);
+        opacity:0.3;
+    }
+
+    100%{
+        transform: rotate(0deg );
+        opacity: 1;
+    }
+}
+
+@keyframes aim-hover{
+    0% {
+        /* transform: rotateX(0deg); */
+        transform: rotate3d(0, 1, 1, 0deg); /*usa piani cartesiani normalizzati*/
+        opacity: 1;
+        background-color: red;
+    }
+    50% {
+        background-color: aqua;
+        transform: rotate3d(0, 1, 1, 360deg);
+        /* transform: rotateX(360deg); */
+        opacity:0.3;
+    }
+
+    100%{
+       background-color: red;
+       transform: rotate3d(0, 1, 1, 0deg);
+       /* transform: rotateX(0deg ); */
+       opacity: 1;
+    }
+
+}
+

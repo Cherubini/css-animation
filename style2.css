@@ -1,0 +1,69 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 54, 54);
+}
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.bar{
+    height: 5px;
+    width: 12px;
+    animation: change-height 0.35s infinite alternate;
+}
+
+.red{
+background-color: red;
+box-shadow: 1px 1px 10px red;
+animation-delay: 0.1s;
+} 
+.orange{
+background-color: orange;
+box-shadow: 1px 1px 10px orange;
+animation-delay: 0.15s;
+} 
+.yellow {
+background-color: yellow;
+box-shadow: 1px 1px 10px yellow;
+animation-delay: 0.2s;
+}
+.green{
+background-color: green;
+box-shadow: 1px 1px 10px green;
+animation-delay: 0.25s;
+}
+.blue{
+background-color: blue;
+box-shadow: 1px 1px 10px blue;
+animation-delay: 0.3s;
+}
+.indaco{
+    background-color: indigo;
+    box-shadow: 1px 1px 10px indigo;
+    animation-delay: 0.35s;
+}
+
+@keyframes change-height{
+    from{
+        height: 5px;
+    }
+    to{
+        height: 32px;
+    }
+}
