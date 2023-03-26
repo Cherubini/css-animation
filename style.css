@@ -32,8 +32,9 @@ html, body{
     animation-name: animation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    /* animation-timing-function: ease-in-out; */
-    
+    /* animation-timing-function: ease-in-out; 
+    */
+anim
 }
 .box:hover{
     animation-name: aim-hover;
@@ -42,7 +43,7 @@ html, body{
 
 @keyframes animation /*nome scelto da me*/{
     0% {
-        transform: rotate(0deg);
+         transform: rotate(0deg);
         opacity: 1;
     }
     50% {
@@ -76,6 +77,6 @@ html, body{
        /* transform: rotateX(0deg ); */
        opacity: 1;
     }
-
+ 
 }
 
